@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallback"
+    tools:context=".MenuFragment">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="#CBFF9800"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/bStartGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bExit"
+        android:layout_width="275dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="175dp"
+        android:text="Exit Game"
+        android:textColor="#C6000000"
+        android:textAllCaps="false"
+        android:backgroundTint="#864CAF50"
+        android:textSize="17dp"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bPrivacyPolicy"
+        android:layout_width="275dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:text="Privacy Policy"
+        android:textColor="#C6000000"
+        android:backgroundTint="#864CAF50"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/bExit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/bStartGame"
+        android:layout_width="275dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="50dp"
+        android:text="Start Game"
+        android:textColor="#C6000000"
+        android:backgroundTint="#864CAF50"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/bPrivacyPolicy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
